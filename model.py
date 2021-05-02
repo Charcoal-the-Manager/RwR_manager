@@ -17,8 +17,12 @@ def drop_id_column(df_input):
     df_input.drop(['Id'], axis=1, inplace=True)
     return df_input
 
+# Sultan.the.Junior added this line here!
+
 def count_missing_values(df_input):
     return df_input.isnull().sum()
+
+#Sultan.the.Junior added this line here as well!
 
 def fill_missing_values_in_cat_columns(df_input):
     cat_columns = df_input.select_dtypes(include=['object']).columns
